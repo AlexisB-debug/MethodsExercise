@@ -25,83 +25,7 @@ namespace MethodsExercise
             Console.WriteLine($"The quotient of integers twenty-one & six is {QuotientOfIntegers(21, 6)}");
         }
         
-        //Console.WriteLine("Please, enter numbers to sum then type 'done' to finish!");
-           //while (true)
-          //  {
-            //    string input = Console.ReadLine();
-             //   if (input.ToLower() == "done")
-             //   {
-             //       break;
-             //   }
-
-             //   if (int.TryParse(input, out int number))
-             //   {
-                //    SumOfIntegers(number);
-             //   }
-             //   else
-              //  {
-              //      Console.WriteLine("Invalid input. Please enter a number or 'done'");
-           //     }
-          //  }
-
-           // Console.WriteLine("The difference of integers!");
-            //Console.WriteLine("Please, enter the numbers to subtract then type 'done' to finish!");
-           // while (true)
-           // {
-            //    string input = Console.ReadLine();
-            //    if (input.ToLower() == "done")
-             //   {
-              //      break;
-              //  }
-              //  if (int.TryParse(input, out int number))
-               // {
-                 //   DifferenceOfIntegers(number);
-               // }
-               // else
-               // {
-                //    Console.WriteLine("Invalid input. Please enter a number or 'done'");
-               // }
-           // }
-
-           // Console.WriteLine("The product of integers!");
-           // Console.WriteLine("Please, enter the numbers to multiply then type 'done' to finish!");
-            //while (true)
-            //{
-             //   string input = Console.ReadLine();
-             //   if (input.ToLower() == "done")
-             //   {
-              //      break;
-              //  }
-              //  if (int.TryParse(input, out int number))
-             //   {
-              //      ProductOfIntegers(number);
-               // }
-               // else
-               // {
-                //    Console.WriteLine("Invalid input. Please enter a number or 'done'");
-                //}
-           // }
-
-           // Console.WriteLine("The quotient of integers!");
-           // Console.WriteLine("Please, enter the numbers to multiply then type 'done' to finish!");
-           // while (true)
-           // {
-            //    string input = Console.ReadLine();
-            //    if (input.ToLower() == "done")
-            //    {
-            //        break;
-             //   }
-              //  if (int.TryParse(input, out int number))
-              //  {
-              //      QuotientOfIntegers(number);
-             //   }
-             //   else
-             //   {
-             //       Console.WriteLine("Invalid input. Please enter a number or 'done'");
-             //   }
-           // }
-
-           public static void DayAtTheZoo(string userName, string favoriteZooAnimal, string animalFood, string fedAnimal,
+        public static void DayAtTheZoo(string userName, string favoriteZooAnimal, string animalFood, string fedAnimal,
                 string zooSouvenir)
             {
                 Console.WriteLine($"Today, {userName} went to the zoo!");
@@ -110,19 +34,18 @@ namespace MethodsExercise
                 Console.WriteLine($"{userName} fed {animalFood} to the {fedAnimal}.");
                 Console.WriteLine($"{userName} purchased a {zooSouvenir} at the zoo gift shop!");
             }
-
-           public static int SumOfIntegers(params int[] numbers)
+        
+        public static int SumOfIntegers(params int[] numbers)
            {
               int sumInteger = 0;
-               foreach (int number in numbers)
+              foreach (int number in numbers)
               {
-                    sumInteger += number;
-               }
-            //    Console.WriteLine($"The sum is {sumInteger}");
-                return sumInteger;
+                  sumInteger += number;
+              }
+              return sumInteger;
             }
-
-            public static int DifferenceOfIntegers(params int[] numbers)
+        
+        public static int DifferenceOfIntegers(params int[] numbers)
             {
                 if (numbers.Length == 0) return 0;
                 int differenceInteger = numbers[0];
@@ -130,29 +53,26 @@ namespace MethodsExercise
                 {
                     differenceInteger -= number;
                 }
-              //  Console.WriteLine($"The difference is {differenceInteger}.");
                 return differenceInteger;
             }
-
-            public static int ProductOfIntegers(params int[] numbers)
+        
+        public static int ProductOfIntegers(params int[] numbers)
             {
                 int productInteger = 1;
                 foreach (int number in numbers)
                 {
                     productInteger *= number;
                 }
-             //   Console.WriteLine($"The product is {productInteger}");
                 return productInteger;
             }
-
-            public static double QuotientOfIntegers(params double[] numbers)
+        
+        public static double QuotientOfIntegers(params double[] numbers)
             {
                 double quotientInteger = numbers[0];
                 foreach (double number in numbers)
                 {
                     quotientInteger /= number;
                 }
-            //    Console.WriteLine($"The quotient is {quotientInteger}");
                 return quotientInteger;
             }
     }
