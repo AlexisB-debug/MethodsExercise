@@ -22,7 +22,7 @@ namespace MethodsExercise
             Console.WriteLine($"The sum is {SumOfIntegers(3, 5, 7)}");
             Console.WriteLine($"The difference of integers thirteen, nine, & seven is {DifferenceOfIntegers(13, 9, 7)}");
             Console.WriteLine($"The product of integers three, nine, & eleven is {ProductOfIntegers(3, 9, 11)}");
-            Console.WriteLine($"The quotient of integers twenty-one & six is {QuotientOfIntegers(21, 6)}");
+            Console.WriteLine($"The quotient of integers twenty-one & seven is {QuotientOfIntegers(21, 7)}");
         }
         
         public static void DayAtTheZoo(string userName, string favoriteZooAnimal, string animalFood, string fedAnimal,
@@ -74,7 +74,6 @@ namespace MethodsExercise
             {
                 quotientRationalNumber /= numbers[i];
             }
-
             return quotientRationalNumber;
         }
     }
