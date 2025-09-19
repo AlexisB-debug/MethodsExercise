@@ -47,9 +47,9 @@ namespace MethodsExercise
         
         public static int DifferenceOfIntegers(params int[] numbers)
             {
-                if (numbers = 0) return 0;
+                if (numbers.Length == 0) return 0;
                 int differenceInteger = numbers[0];
-                for (int i = 1; i < numbers; i++)
+                for (int i = 1; i < numbers.Length; i++)
                 {
                     differenceInteger -= numbers[i];
                 }
@@ -66,11 +66,11 @@ namespace MethodsExercise
                 return productInteger;
             }
 
-        public static double QuotientOfIntegers(params double[] numbers)
+        public static int QuotientOfIntegers(params int[] numbers)
         {
-            if (numbers = 0) return 0;
-            double quotientRationalNumber = numbers[0];
-            for (double i = 1; i < numbers; i++)
+            if (numbers.Length == 0) return 0;
+            int quotientRationalNumber = numbers[0];
+            for (int i = 1; i < numbers.Length; i++)
             {
                 quotientRationalNumber /= numbers[i];
             }
